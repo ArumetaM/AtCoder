@@ -16,8 +16,6 @@ for i in range(1,N-2):
             BC = x
             ifB = left
             ifC = right
-        else:
-            break
     DE = 10000000000
     ifD = 0
     ifE = 0
@@ -29,7 +27,5 @@ for i in range(1,N-2):
             DE = x
             ifD = left
             ifE = right
-        else:
-            break
     ans.append(max(ifB,ifC,ifD,ifE)-min(ifB,ifC,ifD,ifE))
 print(min(ans))
